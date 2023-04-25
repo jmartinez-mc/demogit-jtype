@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 public class jtype {
 	
     /**
-     * jtype command
+     * jtype command-line application
      *  
      * @param args Command-line arguments.
      * El primer argumento será un nombre de fichero
@@ -21,12 +21,14 @@ public class jtype {
         String filename = null;
 		// Examinar los argumentos de la linea de órdenes
 		if (args.length>0) {
+			// Command-line mode
 			if (!args[0].isBlank()) {
 				filename = args[0];
 				System.out.printf("> Leido en la linea de órdenes %s%n",args[0]);	
 			}
 		}
 		else {
+			// Interactive mode
 			filename = JOptionPane.showInputDialog("Nombre del Fichero");			
 			System.out.printf("> Leido en Ventana %s%n",filename);
 		}
