@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  * de Windows (o cat en Unix).
  * 
  * @author josema
- * @version 1.1
+ * @version 1.2
  */
 public class jtype {
 	
